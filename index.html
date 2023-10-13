@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet -->
+</head>
+<style>
+body {
+    background-color: #090909; /* White background */
+    color: #1ad92d; /* Dark text color */
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center-align all content within the body */
+}
+
+header {
+    background-color: #1ad92d; /* Light pink header background */
+    padding: 20px;
+    text-align: center; /* Center-align the header content */
+}
+
+h1 {
+    margin: 0;
+    color: #090909;
+}
+
+h2 {
+    color: #1ad92d; /* Light pink section headings */
+    border-bottom: 2px solid #1ad92d; /* Light pink section heading underline */
+    padding-bottom: 10px;
+    margin-top: 20px;
+    text-align: center; /* Center-align section headings */
+}
+
+ .degree {
+    background-color: #090909;
+    border: 1px solid #1ad92d;
+    padding: 10px;
+    margin: 10px auto; /* Center-align the job and degree sections */
+    max-width: 400px; /* Set a maximum width for better center alignment */
+}
+
+ul {
+    list-style: circle;
+    padding: 0;
+}
+
+/* Apply the transition to "About Me," "Education," and "Skills" sections */
+#about, #education, #skills, #hobbies, #contact{
+    transition: transform 0.2s;
+}
+
+#about:hover, #education:hover, #skills:hover,#hobbies:hover,#contact:hover {
+    transform: translateY(-5px); /* Move the section up on hover */
+}
+
+.project {
+    background-color: #090909;
+    border: 1px solid #1ad92d;
+    padding: 10px;
+    margin: 10px auto; /* Center-align the project sections */
+    max-width: 400px; /* Set a maximum width for better center alignment */
+    transition: transform 0.2s, box-shadow 0.2s; /* Add transition effects */
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Move the project up on hover */
+    box-shadow: 0 4px 8px #1ad92d; /* Add a subtle box shadow on hover */
+}
+
+a {
+    color: #1ad92d; /* Light green links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.skill-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.skill-button {
+    background-color:#1ad92d; /* Light pink button background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a transition for button color change */
+}
+
+.skill-button:hover {
+    background-color: hsl(123, 91%, 22%); /* Light pink button background on hover */
+}
+
+.skill-button + img {
+    margin-right: 10px;
+}
+.pic{
+    height: 30px;
+    width: 30px;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic img {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px; /* Add some spacing between the image and the description */
+}
+
+.description {
+    text-align: left;
+}
+
+</style>
+<body>
+    <header>
+        <h1>RESUME</h1>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="profile-pic">
+                <img src="https://st2.depositphotos.com/1007566/11541/v/450/depositphotos_115416438-stock-illustration-avatar-business-woman-vector-graphic.jpg">
+            </div>
+        <p>
+            Hello! I'm Jasmine Lorkan, and I am a programmer with a strong passion for technology and coding.
+
+Programming, for me, is not just a skill; it's a means to bring ideas to life. I am fascinated by the endless possibilities that the world of software development offers. Whether it's solving complex problems, building applications, or simply exploring new programming languages, I find immense joy in the process.
+
+During my first two years, I've dived into various areas of programming, gaining proficiency in languages like C, JavaScript, and C++. I've worked on personal projects and collaborated on team efforts, which have given me a taste of the real-world challenges and the importance of clean, maintainable code.
+
+I'm particularly interested in web development and am continually expanding my knowledge in front-end and back-end technologies. The journey of creating interactive, user-friendly web applications excites me, and I'm always on the lookout for new trends and best practices in the field.
+
+My goal as a programmer is to continue learning, collaborating, and contributing to meaningful projects. I believe in the power of technology to make a positive impact on our lives and the world, and I'm committed to being part of that journey.
+        </p>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <div class="degree">
+            <p>I completed my schooling from Tagore Baal Niketan,Karnal.</p>
+            <p>I secured 91% in 10th grade and 92% in 12th grade.</p>
+            <p>Currently I am a BTECH CSE student at Seth Jai Prakash Mukund Lal Institute of Technology,Radaur.</p>
+        </div>
+        <!-- Repeat the above 'degree' div for each education entry -->
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-buttons">
+            <div class="skill-item">
+                <img class="pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png" >
+                <button class="skill-button">C LANGUAGE</button>
+            </div>
+            <div class="skill-item">
+                <img class="pic" src="https://www.shutterstock.com/image-vector/emblem-c-plus-programming-language-260nw-1764554240.jpg">
+                <button class="skill-button">C++</button>
+            </div>
+            <div class="skill-item">
+                <img class="pic" src="data:image/png;base64,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" alt="Skill 3">
+                <button class="skill-button">HTML </button>
+            </div>
+
+            <div class="skill-item">
+                <img class="pic" src="data:image/jpeg;base64,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" alt="Skill 3">
+                <button class="skill-button">CSS</button>
+            </div>
+           
+            
+            <div class="skill-item">
+                <img class="pic" src="https://img1.pnghut.com/2/8/17/5TPVFkysrL/symbol-html-react-angular-jquery.jpg" alt="Skill 3">
+                <button class="skill-button">JavaScript</button>
+            </div>
+
+            <div class="skill-item">
+                <img class="pic" src="https://previews.123rf.com/images/antonshaparenko/antonshaparenko2002/antonshaparenko200200270/140045437-data-structure-icon-simple-element-from-data-organization-collection-filled-data-structure-icon-for.jpg" alt="Skill 3">
+                <button class="skill-button">DATA STUCTURES</button>
+            </div>
+
+
+
+           
+
+
+
+
+        </div>
+    </section>
+
+    
+<section id="hobbies">
+    <h2>Hobbies</h2>
+    <ul class="hobbies-list">
+        <li>Writing </li>
+        <li>Reading and Learning </li>
+        <li>Creative Pursuits</li>
+        <!-- Add more hobbies as needed -->
+    </ul>
+</section>
+     
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email:jasminelorkan@email.com</p>
+        <p>Phone: 9991555268</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/your-profile">Jasmine Lorkan</a></p>
+    </section>
+</body>
+</html>
+
